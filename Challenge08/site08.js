@@ -19,19 +19,39 @@ function displayNumbers() {
 
 //takes an array of numbers and returns the sum of all the numbers
 function sumNumbers(numArry) {
-    return 0;
+    var total = 0;
+    numArry.forEach(element => {
+        total = total + element;
+    });
+    return total;
 }
 //takes an array of numbers and returns the average of all the numbers
 function avgNumber(numArry) {
-    return 0;
+    var total = 0;
+    numArry.forEach(element => {
+        total = total + element;
+    });
+    return total / numArry.length;
 }
 
 //takes an array of numbers and returns the max number
 function maxNumber(numArry) {
-    return 0;
+    var highest = numArry[0];
+    numArry.forEach(element => {
+        if (highest < element) {
+            highest = element;
+        }
+    });
+    return highest;
 }
 
 //takes an array of numbers and returns the min number
 function minNumber(numArry) {
-    return 0;
+    var lowest = numArry[0];
+    numArry.forEach(element => {
+        if (lowest > element) {
+            lowest = element;
+        }
+    });
+    return lowest;
 }

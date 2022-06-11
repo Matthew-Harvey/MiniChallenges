@@ -145,15 +145,30 @@ function citySort() {
 
 //takes an array of objects and sorts by population. 
 function sortByPopulation(cityData, sortDir) {
-    
+    if (sortDir == "asc") {
+        cityData.sort((a, b) => { return (a.population - b.population)});
+    }
+    else {
+        cityData.sort((a, b) => { return (b.population - a.population)});
+    }
 }
 
 //takes an array of objects and sorts by median age. 
 function sortByAge(cityData, sortDir){
-  
+    if (sortDir == "asc") {
+        cityData.sort((a, b) => { return (a.median_age - b.median_age)});
+    }
+    else {
+        cityData.sort((a, b) => { return (b.median_age - a.median_age)});
+    }
 }
 
 //takes an array of objects and sorts by city name. 
 function sortyByName(cityData) {
-    
+    if (sortDir == "asc") {
+        cityData.sort((a, b) => { return (a.city - b.city)});
+    }
+    else {
+        cityData.sort((a, b) => { return (b.city - a.city)});
+    }
 }

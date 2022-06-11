@@ -33,7 +33,24 @@ function checkBrackets() {
 }
 
 function isBalanced(brackets) {
-
-   return false;
-
+    var stack = [];
+    let openbrackets = ["{", "[", "("];
+    let closebrackets = ["}", "]", ")"];
+    const balancedbrackets = {"(":")", "{":"}", "[":"]"}
+    for (var index = 0; index < brackets.length; index++) {
+        if (openbrackets.includes(brackets[index])) {
+            stack.push(brackets[index]);
+            continue;
+        }
+        else if (closebrackets.includes(brackets[index])) {
+            if (stack.length == 0) {
+                return false;
+            }
+            let res = stack.pop();
+            if (balancedbrackets[res] != brackets[index]) {
+                return false
+            }
+        }
+    }
+    return stack.length == 0;
 }

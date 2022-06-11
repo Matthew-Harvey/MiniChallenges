@@ -10,22 +10,30 @@ function findVowels() {
     }
 
     //implement getVowelCount
-    let vowelObj = getVowelCount(str);
+    var getvowels = getVowelCount(str);
+    var vCount = getvowels[0];
+    var vFound = getvowels[1];
     
-    //used for display no need to change
-    //check if the obj returned is empty
-    if (Object.keys(vowelObj).length === 0){
-        alert("Error: Vowel Object is Empty");
-        return;
-    }
-
-    document.getElementById("results").innerHTML = `You entered <strong>"${str}"</strong> it has ${vowelObj.vCount} vowels.<br>The vowels found are ${vowelObj.vFound.toString()}`;
+    document.getElementById("results").innerHTML = `You entered <strong>"${str}"</strong> it has ${vCount} vowels.<br>The vowels found are ${vFound}`;
 
 }
 
 //takes an string and returns the vowel count and the vowels found as an object.
 function getVowelCount(str) {
-    
-    return {};
+    let vowels = ["a", "e", "i", "o", "u"]
+    var vCount = 0;
+    var vFound = "";
+    str = str.replace(/\s/g, '');
+    str = str.toLowerCase();
+    arr = str.split('');
+    arr.forEach(element => {
+        vowels.forEach(vowel => {
+            if (element == vowel) {
+                vCount++;
+                vFound = vFound + element;
+            }
+        });
+    });
+    return [vCount, vFound];
 
 }

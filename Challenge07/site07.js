@@ -28,6 +28,19 @@ function checkPalindrome() {
 //takes an string to check if it is a palindrome.
 //returns true or false. 
 function isPalindrome(str) {
-
-    return false;
+    str = str.replace(/\s/g, '');
+    str = str.replace(/[.,?\/#!$%\^&\*;:{}=\-_`~()]/g,'');
+    str = str.toLowerCase();
+    var arr = str.split('');
+    arr = arr.reverse();
+    var endstr = "";
+    arr.forEach(element => {
+        endstr = endstr + element;
+    });
+    if (endstr == str) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
