@@ -1,44 +1,64 @@
 <template id="menu-template">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html"><img src="/img/CF_Mark.jpg" width="50"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0" id="navItems">
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
+                <li class="nav-item" style="margin-right: 20px; margin-bottom: 10px; margin-top: 10px;">
+                        <a class="btn btn-secondary" href="/index.html" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                            </svg>
+                        </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge01/index.html">01-Longest Word</a>
+                <li class="nav-item" style="margin-right: 20px; margin-bottom: 10px; margin-top: 10px;">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          String
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="/string/anagramcheck/">Anagram Check</a></li>
+                          <li><a class="dropdown-item" href="/string/balancedbrackets/">Balanced Brackets</a></li>
+                          <li><a class="dropdown-item" href="/string/mostusedwords/">Most Used Words</a></li>
+                          <li><a class="dropdown-item" href="/string/palindromecheck/">Palidrome Check</a></li>
+                          <li><a class="dropdown-item" href="/string/vowelcount/">Vowel Count</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge02/index.html">02-Balanced Brackets</a>
+                <li class="nav-item" style="margin-right: 20px; margin-bottom: 10px; margin-top: 10px;">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Array
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="/array/arraymaths/">Array Sums</a></li>
+                          <li><a class="dropdown-item" href="/array/longestword/">Longest Word</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge03/index.html">03-KM to Miles</a>
+                <li class="nav-item" style="margin-right: 20px; margin-bottom: 10px; margin-top: 10px;">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Object
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="/object/objectsearch/">Object Search</a></li>
+                          <li><a class="dropdown-item" href="/object/objectsort/">Object Sort</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge04/index.html">04-Object Sort</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge05/index.html">05-Anagram Check</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge06/index.html">06-Count Vowels</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge07/index.html">07-Palindrome Check</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge08/index.html">08-Sum Array Values</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge09/index.html">09-Searching Objects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Challenge10/index.html">10-Most used word</a>
+                <li class="nav-item" style="margin-right: 20px; margin-bottom: 10px; margin-top: 10px;">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Float
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="/float/converts/">Conversion</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
