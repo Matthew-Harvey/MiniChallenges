@@ -1,7 +1,7 @@
-# Javascript coding challenges by Coder Foundry.
+# Mini Coding Challenges
 
-The 10 most poplular coding challenges we see students face.
+Compact solutions to common challenges.
 
-Try and solve them and if you need help we have built a free tutorial course on https://learn.coderfoundry.com
+Each challenge is interactive and has my code solution written alongside - use the top bar to navigate between data type and challenges.
 
-This repo does not have the solutions but gives you a framework to solve them. This repo is used in conjunction with our free course. 
+Built using HTML, CSS, JavaScript, Bootstrap
