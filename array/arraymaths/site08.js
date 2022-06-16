@@ -1,8 +1,12 @@
-const numbers = [9, 1, 3, 27, 15, -5, 13, 7];
-
 //driver function used for display and passing values.
 function displayNumbers() {
-    
+
+    let numbers = [];
+
+    var input = document.getElementsByName('txtval[]');
+    for (var i = 0; i < input.length; i++) {
+        numbers.push(parseFloat(input[i].value));
+    }
     //implement the four functions to return sum, avg, max and min
     let sum = sumNumbers(numbers);
     let avg = avgNumber(numbers);

@@ -1,19 +1,8 @@
-//balanced
-const testbrackets1 = "[()]{}{[()()]()}";
-//balanced
-const testbrackets2 = `([{}])`;
-//not balanced
-const testbrackets3 = "{(})[]";
-//not balanced
-const testbrackets4 = "[(])";
-//not balanced
-const testbrackets5 = "[()";
-
 //driver function used for display and passing values.
 function checkBrackets() {
 
     //change testbrackets here. makes easire to change in one place.
-    let testbrackets = testbrackets1;
+    let testbrackets = document.getElementById("bracketinput").value;
 
     //implement isBalanced function. checks if the bracket string is balanced.
     let results = isBalanced(testbrackets);
