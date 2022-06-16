@@ -1,6 +1,6 @@
 # Mini Coding Challenges
 
-[Live Demo](fancy-kelpie-24124f.netlify.app/)
+[Live Demo](https://fancy-kelpie-24124f.netlify.app/)
 
 Compact solutions to common challenges.
 
